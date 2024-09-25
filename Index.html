@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Those Bugs Stretchin' It Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        #summaryList {
+            list-style-type: none;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Those Bugs Stretchin' It Challenge Tracker</h1>
+    <h2>Bug 1</h2>
+    <input type="number" id="morningPointsUser1" placeholder="Morning Points">
+    <input type="number" id="eveningPointsUser1" placeholder="Evening Points">
+    <button onclick="logPoints('User1')">Log Points</button>
+    <input type="number" id="goalInputUser1" placeholder="Set Goal">
+    <button onclick="setGoal('User1')">Set Goal</button>
+    <h3>Goal: <span id="goalUser1">0</span></h3>
+    <h4>Total Points: <span id="totalPointsUser1">0</span></h4>
+    <h4>Streak: <span id="streakDisplayUser1">0</span></h4>
+
+    <h2>Bug 2</h2>
+    <input type="number" id="morningPointsUser2" placeholder="Morning Points">
+    <input type="number" id="eveningPointsUser2" placeholder="Evening Points">
+    <button onclick="logPoints('User2')">Log Points</button>
+    <input type="number" id="goalInputUser2" placeholder="Set Goal">
+    <button onclick="setGoal('User2')">Set Goal</button>
+    <h3>Goal: <span id="goalUser2">0</span></h3>
+    <h4>Total Points: <span id="totalPointsUser2">0</span></h4>
+    <h4>Streak: <span id="streakDisplayUser2">0</span></h4>
+
+    <h2>Summary</h2>
+    <ul id="summaryList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
